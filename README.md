@@ -10,7 +10,7 @@ The objective of this assignment is twofold:
 
 ## Submission Information
 
-You should fill out this information before submitting your assignment.  Make sure to document the name and source (e.g. website URL) for any third party assets such as 3D models, textures, or any other content used that was not solely written by you.
+You should fill out this information before submitting your assignment.  Make sure to document the name and source of any third party assets such as 3D models, textures, or any other content used that was not solely written by you.  Include sufficient detail for the instructor or TA to easily find them, such as asset store or download links.
 
 Name: 
 
@@ -35,7 +35,7 @@ Graded out of 10 points. Each of the parts to be added are presented in lecture 
 
 **Bonus Challenge:** When you click on one of your objects with the mouse, play a sound and have a particle system shoot particles out from the center of the object. (1)
 
-**Notes:** This assignments assumes that you will find your own texture images on the internet.  Make sure to document all of these third party assets. You won't be judged on aesthetics, but I do want you to do more than just copy from the tutorials.
+This assignments assumes that you will find your own texture images on the internet.  Make sure to document all of these third party assets. You won't be judged on aesthetics, but I do want you to do more than just copy from the tutorials.  ***Be aware that points will be deducted for using third party assets that are not properly documented.***
 
 ## Submission
 
