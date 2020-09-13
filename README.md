@@ -45,7 +45,7 @@ You will need to check out and submit the project through GitHub classroom.  The
 
 Please test that your submission meets these requirements.  For example, after you check in your final version of the assignment to GitHub, check it out again to a new directory and make sure everything builds and runs correctly.
 
-## Development Environment
+## Dependencies
 
 The sample has already been set up with a complete project for Typescript development.
 
@@ -53,11 +53,9 @@ To work with this sample and prepare your submission, you should have Node.js in
 
 In addition to Node, you should make sure a recent (e.g., version 3.9 or later) version of Typescript is installed.  The easiest way to do this is by executing `npm install --global typescript`.
 
-Under the hood, we are using the Node `npx` command to both build the project (with webpack) and run a local http webserver on your machine.  The included ```package.json``` file is set up to do this automatically.
+## Local Development 
 
-## Running 
-
-After checking out the project, you need to initialize by pulling the dependencies from npm with:
+After checking out the project, you need to initialize by pulling the dependencies with:
 ```
 npm install
 ```
@@ -67,16 +65,36 @@ After that, you can compile and run a server with:
 npm run start
 ```
 
-You do not have to run ```tsc``` to build the .js files from the .ts files;  ```npx``` builds them on the fly as part of running webpack.
+Under the hood, we are using the `npx` command to both build the project (with webpack) and run a local http webserver on your machine.  The included ```package.json``` file is set up to do this automatically.  You do not have to run ```tsc``` to compile the .js files from the .ts files;  ```npx``` builds them on the fly as part of running webpack.
 
-You can run the sample by pointing your web browser at ```https://localhost:8080```.
+You can run the program by pointing your web browser at ```https://localhost:8080```.
+
+## Build and Deployment
+
+After you have finished the assignment, you can build a distribution version of your program with:
+
+```
+npm run build
+```
+
+This will generate an `index.html` file and a Babylon bundle in the `dist` subdirectory of your project.  Note that this generated code is not human readable, so you can deploy the contents of this directory without worrying about other students copying your code.
+
+To complete the final step in this assignment, you will need to set up a public `.www` directory in your CSE Labs account and follow these steps:
+
+1. If you don’t already have a CSE Labs account, you should [request one from CSE-IT](https://cseit.umn.edu/knowledge-help/account-access) (do this now). 
+2. Log in to your CSE Labs account using [SSH](https://cseit.umn.edu/knowledge-help/learn-about-ssh) or [VOLE](https://vole.cse.umn.edu/). 
+3. Follow the instructions to [set up your homepage](https://cseit.umn.edu/knowledge-help/homepages-cs-cselabs) provided by CSE-IT. You should now be able to access your web folder by opening `http://www-users.cselabs.umn.edu/~<username>/` in a web browser.
+4. [Copy](https://cseit.umn.edu/knowledge-help/transfer-file) the contents of your project's `dist` folder to a subdirectory within the `.www` folder of your CSE Labs account.
+5. Make sure to set the [public permissions](https://cseit.umn.edu/knowledge-help/homepages-cs-cselabs) so that the directory is executable and files are readable.
+
+If you have problems with any of the steps above, you should contact the CSE-IT help desk by emailing [csehelp@umn.edu](mailto:csehelp@umn.edu).  
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Material for <a xmlns:cc="http://creativecommons.org/ns#" href="https://canvas.umn.edu/courses/194179" property="cc:attributionName" rel="cc:attributionURL">CSCI 5619 Fall 2020</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://illusioneering.umn.edu/" property="cc:attributionName" rel="cc:attributionURL">Evan Suma Rosenberg</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. 
+Material for [CSCI 5619 Fall 2020](https://canvas.umn.edu/courses/194179) by [Evan Suma Rosenberg](https://illusioneering.umn.edu/) is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 The intent of choosing (CC BY-NC-SA 4.0) is to allow individuals and instructors at non-profit entities to use this content.  This includes not-for-profit schools (K-12 and post-secondary). For-profit entities (or people creating courses for those sites) may not use this content without permission (this includes, but is not limited to, for-profit schools and universities and commercial education sites such as Coursera, Udacity, LinkedIn Learning, and other similar sites).   
 
 ## Credits
 
-This assignment was based upon content from the 3D User Interfaces Fall 2020 course by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.blairmacintyre.me/3dui-class-f20" property="cc:attributionName" rel="cc:attributionURL">Blair MacIntyre</a> at Georgia Tech.
+This assignment was based upon content from the [3D User Interfaces Fall 2020](https://github.blairmacintyre.me/3dui-class-f20) course by Blair MacIntyre.
