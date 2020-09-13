@@ -13,8 +13,11 @@ The objective of this assignment is twofold:
 You should fill out this information before submitting your assignment.  Make sure to document the name and source (e.g. website URL) for any third party assets such as 3D models, textures, or any other content used that was not solely written by you.
 
 Name: 
+
 UMN Email:
+
 Build URL:
+
 Third Party Assets:
 
 ## Rubric
