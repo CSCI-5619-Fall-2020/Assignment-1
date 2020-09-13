@@ -8,7 +8,7 @@ The objective of this assignment is twofold:
 1. Get your computer set up to work with the toolset we are using.
 2. Do a little bit of work with Babylon.
 
-## Required Information
+## Submission Information
 
 You should fill out this information before submitting your assignment.  Make sure to document the name and source (e.g. website URL) for any third party assets such as 3D models, textures, or any other content used that was not solely written by you.
 
@@ -19,25 +19,26 @@ Third Party Assets:
 
 ## Rubric
 
-Graded out of 10.
-
-Each of the parts to be added are discussed in one of the lessons in the [Babylon 101](https://doc.babylonjs.com/babylon101/) tutorial.
+Graded out of 10 points. Each of the parts to be added are presented in lecture or covered in one of the lessons in the [Babylon 101](https://doc.babylonjs.com/babylon101/) tutorials.
 
 1. Ensure your program builds with no Typescript warnings. (1)
-2. Add a ground plane with some interesting ground texture.  Should be centered under the initial position of the camera. (1)
-3. Change the PointLight that is in the sample code to a directional light that is not very bright and not white, and also add one SpotLight to the scene, a reasonable distance above the viewer's initial position. (1)
-4. Add at least 5 objects, with interesting materials and/or textures, sitting on the ground. (2)
-5. Use keyframe animation to add at least 2 moving objects above the initial viewer position, but below the lights. (2)
-6. When you click on one of your objects with the mouse, play a sound and have a particle system shoot particles out from the center of the object. (1)
-7. Add shadows, for both the directional and spot lights. (1)
+2. Add the debug layer to your scene. (1)
+3. Add a ground plane with some interesting ground texture.  Should be centered under the initial position of the camera. (1)
+4. Add a SpotLight to the scene that is a color other than white, located a reasonable distance above the viewer's initial position. (1)
+5. Use the MeshBuilder to add at least 2 objects with interesting materials and/or textures, sitting on the ground. (2)
+6. Use keyframe animation to add at least 2 moving objects above the ground, but below the lights. (2)
+7. Add shadows for both the directional and spot lights. (1)
+8. Build the program by executing `npm run build` and then upload the contents of the `dist` folder to your public `.www` directory.  Make sure to set the permissions so that it loads correctly in a web browser.  You should include this URL in submission information section of your `README.md` file. (1)
 
-Up to 2 additional bonus points will be given for using interesting textures, lights and materials.  (You won't be judged on aesthetics;  I want you to do more than just cut and paste code and textures from the tutorial.)
+**Bonus Challenge:** When you click on one of your objects with the mouse, play a sound and have a particle system shoot particles out from the center of the object. (1)
+
+**Notes:** This assignments assumes that you will find your own texture images on the internet.  Make sure to document all of these third party assets. You won't be judged on aesthetics, but I do want you to do more than just copy from the tutorials.
 
 ## Submission
 
-You will need to check out and submit the project through GitHub classroom.  The project folder should contain just the additions to the sample project that are needed to implement the project.  Do not add extra files, and do not remove the .gitignore file (we do not want the "node_modules" directory in your repository.)
+You will need to check out and submit the project through GitHub classroom.  The project folder should contain just the additions to the sample project that are needed to implement the project.  Do not add extra files, and do not remove the `.gitignore` file (we do not want the "node_modules" directory in your repository.)
 
-**Do not change the names** of the existing files (e.g., index.html, index.ts, etc).  The TA needs to be able to test your program as follows:
+**Do not change the names** of the existing files.  The TA needs to be able to test your program as follows:
 
 1. cd into the directory and run ```npm install```
 2. start a local web server and compile by running ```npm run start``` and pointing the browser at your ```index.html```
@@ -48,15 +49,15 @@ Please test that your submission meets these requirements.  For example, after y
 
 The sample has already been set up with a complete project for Typescript development.
 
-To work with this sample and prepare your submission, you should have Node (and in particular, npm and npx) installed, which you can retrieve from [nodejs.org](http://nodejs.org).   
+To work with this sample and prepare your submission, you should have Node.js installed, which you can retrieve from [nodejs.org](http://nodejs.org) or by downloading `npm` using a package manager.
 
-In addition to node, you should make sure a recent (e.g., version 3.9 or later) version of Typescript is installed, as described at [www.typescriptlang.org](http://www.typescriptlang.org).
+In addition to Node, you should make sure a recent (e.g., version 3.9 or later) version of Typescript is installed.  The easiest way to do this is by executing `npm install --global typescript`.
 
-Finally, we will use the node `npx` command to both build the project (with webpack) and run a local http webserver on your machine.  The ```package.json``` is set up to run this server 
+Under the hood, we are using the Node `npx` command to both build the project (with webpack) and run a local http webserver on your machine.  The included ```package.json``` file is set up to do this automatically.
 
 ## Running 
 
-You set up the initial project by pulling the dependencies from npm with 
+After checking out the project, you need to initialize by pulling the dependencies from npm with:
 ```
 npm install
 ```
@@ -68,7 +69,7 @@ npm run start
 
 You do not have to run ```tsc``` to build the .js files from the .ts files;  ```npx``` builds them on the fly as part of running webpack.
 
-You can run the sample by pointing your web browser at ```https://localhost:8080/index.html```
+You can run the sample by pointing your web browser at ```https://localhost:8080```.
 
 ## License
 
