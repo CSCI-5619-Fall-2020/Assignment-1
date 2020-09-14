@@ -1,14 +1,19 @@
+/* CSCI 5619 Assignment 1, Fall 2020
+ * Author: Evan Suma Rosenberg
+ * License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+ */ 
+
 import { Engine } from "@babylonjs/core/Engines/engine";
 import { Scene } from "@babylonjs/core/scene";
 import { Vector3 } from "@babylonjs/core/Maths/math";
 import { UniversalCamera } from "@babylonjs/core/Cameras/universalCamera";
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
-import { StandardMaterial} from "@babylonjs/core/Materials/standardMaterial"
 
 // Required to populate the Create methods on the mesh class. 
 // Without this, the bundle would be smaller,
 // but the createXXX methods from mesh would not be accessible.
 import {MeshBuilder} from  "@babylonjs/core/Meshes/meshBuilder";
+import "@babylonjs/core/Materials/standardMaterial"
 
 /******* Add the Game class with a static CreateScene function ******/
 class Game 
@@ -55,7 +60,7 @@ const canvas = document.getElementById("renderCanvas") as HTMLCanvasElement;
 const engine = new Engine(canvas, true); 
 
 // Call the createScene function
-const scene = Game.CreateScene(engine, engine.getRenderingCanvas() as HTMLCanvasElement);
+const scene = Game.CreateScene(engine, canvas);
 
 // Register a render loop to repeatedly render the scene
 engine.runRenderLoop(function () 
