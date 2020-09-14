@@ -3,7 +3,7 @@ import { Scene } from "@babylonjs/core/scene";
 import { Vector3 } from "@babylonjs/core/Maths/math";
 import { UniversalCamera } from "@babylonjs/core/Cameras/universalCamera";
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
-import "@babylonjs/core/Materials/standardMaterial"
+import { StandardMaterial} from "@babylonjs/core/Materials/standardMaterial"
 
 // Required to populate the Create methods on the mesh class. 
 // Without this, the bundle would be smaller,
