@@ -30,7 +30,7 @@ Graded out of 10 points. Each of the parts to be added are presented in lecture 
 5. Use the MeshBuilder to add at least 2 objects with interesting textures, sitting on the ground. (2)
 5. Add a SpotLight to the scene that is a color other than white, located a reasonable distance above the viewer's initial position.  Aim the light at a downward angle so it illuminates the objects added to your scene. (1)
 6. Use keyframe animation to add at least 2 moving objects above the ground, but below the spot light. (2)
-7. Add shadows for both the directional and spot lights. (1)
+7. Add shadows for the spot light. (1)
 8. Build the program by executing `npm run build` and then upload the contents of the `dist` folder to your public `.www` directory.  Make sure to set the permissions so that it loads correctly in a web browser.  You should include this URL in submission information section of your `README.md` file. (1)
 
 **Bonus Challenge:** When you click on one of your objects with the mouse, play a sound and have a particle system shoot particles out from the center of the object. (1)
