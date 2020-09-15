@@ -24,9 +24,9 @@ Third Party Assets:
 
 Graded out of 10 points. Each of the parts to be added are presented in lecture or covered in one of the lessons in the [Babylon 101](https://doc.babylonjs.com/babylon101/) tutorials.
 
-1. Ensure your program builds with no Typescript warnings. (1)
+1. Ensure your program builds with no TypeScript warnings. (1)
 2. Add the debug layer to your scene. (1)
-3. Add a ground plane with some interesting ground texture.  Should be centered under the initial position of the camera. (1)
+3. Add an interesting texture to the ground plane and position the plane to be centered under the initial position of the camera. (1)
 5. Use the MeshBuilder to add at least 2 objects with interesting textures, sitting on the ground. (2)
 5. Add a SpotLight to the scene that is a color other than white, located a reasonable distance above the viewer's initial position.  Aim the light at a downward angle so it illuminates the objects added to your scene. (1)
 6. Use keyframe animation to add at least 2 moving objects above the ground, but below the spot light. (2)
