@@ -1,6 +1,6 @@
 # Assignment 1: Babylon.js and TypeScript
 
-**Due: Monday, September 20, 10:00pm CDT**
+**Due: Monday, September 21, 10:00pm CDT**
 
 This is a skeleton of a small project that will let you build, debug, and run Babylon applications locally.
 
